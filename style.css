@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#border {
+  border-radius: 40px;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 8px rgb(55, 65, 65);
+}
+
+#header {
+  height: 100px;
+  padding: 0px 50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #1a1b23;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ball-container {
+  height: 15px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ball-container > * {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+#ball-container #first {
+  background-color: red;
+}
+
+#ball-container #second {
+  background-color: yellow;
+}
+
+#ball-container #third {
+  background-color: green;
+}
+
+span {
+  font-weight: lighter;
+  color: #74b1be;
+}
+
+#calculator {
+  font-size: 20px;
+  line-height: 100px;
+  color: #9feaf9;
+}
+
+#screen {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+#screen > * {
+  color: #2f3241;
+  height: 110px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#number-history {
+  height: 60px;
+  flex-shrink: 1;
+}
+
+#number {
+  font-size: 70px;
+}
+
+#number-history {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#pannel {
+  background-color: #2f3241;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 15px;
+  column-gap: 15px;
+  margin: 50px;
+}
+
+#buttons > * {
+  font-size: 22px;
+  height: 80px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 80px;
+  background-color: #33444e;
+  color: #9feaf9;
+}
+
+#buttons > *:hover {
+  background-color: #4c6472;
+}
+
+#clear,
+#del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clear {
+  height: auto;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#del {
+  height: auto;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  /* background-color: rgb(255, 86, 86);
+  color: white; */
+}
