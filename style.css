@@ -74,35 +74,18 @@ span {
 }
 
 #screen {
-  height: 150px;
+  height: 120px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
   background-color: #ffffff;
   padding: 10px;
 }
 
 #screen > * {
   color: #2f3241;
-  height: 110px;
   padding-right: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-#number-history {
-  height: 60px;
-  flex-shrink: 1;
-}
-
-#number {
   font-size: 70px;
-}
-
-#number-history {
-  font-size: 30px;
-  font-weight: lighter;
 }
 
 #pannel {
@@ -150,6 +133,4 @@ span {
   height: auto;
   grid-row-start: 3;
   grid-row-end: 5;
-  /* background-color: rgb(255, 86, 86);
-  color: white; */
 }
